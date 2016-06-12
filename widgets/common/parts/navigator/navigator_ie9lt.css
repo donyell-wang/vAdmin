@@ -1,0 +1,94 @@
+/*--顶部区域--*/
+.navbar_kkxz{
+    height:60px;
+}
+.navbar_kkxz .navbar-collapse .align-right{
+    margin-right:12px;
+}
+.navbar-default .navbar-nav>li>a.nav_btn, .navbar-default .navbar-nav>li>a.nav_btn:focus,.navbar-default .navbar-nav>li>a.nav_btn:hover  {
+    font-size: 18px;
+    line-height:18px;
+    padding: 21px 0px;
+    height: 60px;
+    min-width: 72px;
+    text-align: center;
+    margin-left: 90px;
+}
+.navbar-default .navbar-nav>li>a.nav_btn:focus,.navbar-default .navbar-nav>li>a.nav_btn:hover  {
+    border-bottom: 2px solid #3da9f7;
+}
+.navbar-default .navbar-nav>li>a.nav_btn.active{
+    border-bottom: 2px solid #3da9f7;
+}
+.navbar_kkxz .btn_login,
+.navbar_kkxz .btn_register{
+    height: 60px;
+    padding-top: 17px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+    .navbar_kkxz .dropdown>.user-menu{
+        height: 60px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .navbar_kkxz .dropdown-menu{
+        min-width: 0px;
+        padding: 0px;
+    }
+    .navbar_kkxz .dropdown-menu .divider {
+        margin: 0px;
+    }
+    .navbar_kkxz .dropdown-menu .user-menu-item,
+    .navbar_kkxz .dropdown-menu .user-menu-item:hover{
+        background-image: none;
+        background-color: white;
+        padding: 10px 15px;
+    }
+.navbar_kkxz .user-menu-item>.publish-icon,
+.navbar_kkxz .user-menu-item>.logout-icon,
+.navbar_kkxz .user-menu-item>.user-icon,
+.navbar_kkxz .user-menu-item>.publish-icon:hover,
+.navbar_kkxz .user-menu-item>.logout-icon:hover,
+.navbar_kkxz .user-menu-item>.user-icon:hover{
+        background-image: url(/resources/images/user-menu.png);
+        width: 100px;
+        height: 15px;
+        background-repeat: no-repeat;
+        color:#333333;
+        padding-left: 28px;
+}
+.navbar_kkxz .user-menu-item>.publish-icon,
+.navbar_kkxz .user-menu-item>.publish-icon:hover{
+    background-position:0px 2px ;
+}
+.navbar_kkxz .user-menu-item>.user-icon,
+.navbar_kkxz .user-menu-item>.user-icon:hover{
+    background-position:0px -36px ;
+}
+.navbar_kkxz .user-menu-item>.logout-icon,
+.navbar_kkxz .user-menu-item>.logout-icon:hover{
+    background-position:0px -74px ;
+}
+.navbar_kkxz .user-menu-item>.publish-icon:hover,
+.navbar_kkxz .user-menu-item>.logout-icon:hover,
+.navbar_kkxz .user-menu-item>.user-icon:hover
+{
+    background-image: url(/resources/images/user-menu-hover.png);
+    color:#3da9f7;
+}
+.navbar_kkxz .header-search {
+    margin: 13px -10px 0px 10px;
+    padding: 0px;
+}
+.navbar_kkxz .header-search .btn {
+    position: relative;
+    line-height: 22px;
+    float: right;
+    right: 40px;
+}
+.navbar_kkxz .header-search .form-control {
+    height: 34px;
+    width: 180px;
+    line-height: 22px;
+}

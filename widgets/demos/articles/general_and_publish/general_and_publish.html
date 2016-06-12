@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="widgets/demos/articles/general_and_publish/general_and_publish.css"/>
+<div class="container" class="ms-controller">
+    <div class="wrap" ms-controller="demo_article_vm">
+        <div class="page-header">
+            <h2>
+                Articles
+            </h2>
+            <p>
+                In this demo, the usage is a mixing of demo 1 and demo 2.
+            </p>
+        </div>
+        <div class="page-header">
+            <h3>{{page_name}}</h3>
+            <p>page : widgets/demos/articles/general_and_publish.html</p>
+            <p>{{event_name}} is clicked</p>
+        </div>
+        <div class="articles-manager-area">
+            <div class="service">
+                <ol class="breadcrumb manager-head">
+                    <li>{{page_name}}</li>
+                </ol>
+                <div class="serviceItem brief row wrap" ms-repeat="articlesItems">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title" style="margin-bottom: 5px;">
+                            <a style="font-size:16px">{{el.title}}</a>
+                        </div>
+                        <div class="number" style="font-size: 12px;">
+                            <span class="pull-left assistText">
+                                <span ms-visible="el.authorName">{{el.authorName|truncate(20)}}&nbsp;</span>
+                                <span ms-visible="el.releaseTime">·&nbsp;{{el.releaseTime | dateCVT}}</span>
+                                <span ms-visible="el.viewCount!=undefined" title="view">&nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"
+                                    aria-hidden="true"></span>&nbsp;{{el.viewCount}}</span>
+                                    <span ms-visible="el.commentCount!=undefined" title="comment">&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"
+                                        aria-hidden="true"></span>&nbsp;{{el.commentCount}}</span>
+                                    </span>
+                                    <span class="pull-right">
+                                        <span ms-visible="functionList.edit">
+                                            <a href="javaScript:void(0)"  title="edit" class="assistText"><span class="glyphicon glyphicon-edit"></span></a>
+                                        </span>
+                                        <span ms-visible="functionList.delete">|
+                                            <a href="javaScript:void(0)" ms-click="delArticle($index)" title="delete" class="assistText"><span class="glyphicon glyphicon-trash"></span></a>
+                                        </span>
+                                        <span ms-visible="functionList.confirmRelease">|
+                                            <a href="javaScript:void(0)" title="confirm" class="assistText"><span class="glyphicon glyphicon-ok-circle"></span></a>
+                                        </span>
+                                        <span ms-visible="functionList.denyRelease">|
+                                            <a href="javaScript:void(0)" title="deny" class="assistText"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service" ms-if="articlesItems.length==0">
+                            <div class="noData">empty</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="widgets/demos/articles/general_and_publish/general_and_publish.js"></script>

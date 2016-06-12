@@ -1,0 +1,113 @@
+/*--control panel area--*/
+.control-panel{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 250px;
+    bottom: 0px;
+    padding:15px 10px;
+    background-color: #F7F7F7;
+    transition: left 400ms ease-in-out;
+    z-index: 999;
+
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+}
+.control-panel a{
+    cursor: pointer;
+}
+.control-panel a#toggle_btn{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    right: -10px;
+    background-color: #F7F7F7;
+    text-align: center;
+    z-index: 999;
+    padding-top: 5px;
+
+    /*-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);*/
+}
+.control-panel a#toggle_btn>span{
+    transition: all 200ms ease-in-out;
+}
+
+.control-panel.hide-left{
+    left: -245px;
+}
+.control-panel.hide-left + div.main-content{
+    margin-left: 5px;
+}
+.control-panel.hide-left a#toggle_btn>span {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+.control-panel div.menus-area{
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 35px;
+}
+
+.control-panel .accordion-menu{
+
+}
+.control-panel .accordion-menu .panel-heading{
+    background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));
+    background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x;
+}
+.control-panel .accordion-menu .submenu li.list-group-item{
+    cursor: pointer;
+    border-left: solid 4px white;
+    transition: border-left 220ms ease-in;
+}
+.control-panel .accordion-menu .submenu li.chosen,
+.control-panel .accordion-menu .submenu li.chosen:hover
+{
+    border-left: solid 4px #3da9f7;
+}
+.control-panel .accordion-menu .submenu li:hover {
+	border-left: solid 4px #8ccfff;
+}
+
+.control-panel div.setting-area{
+    height: 50px;
+    padding: 15px;
+    width: 100%;
+    background-color: #F1F1F1;
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+}
+/*--END control panel area--*/
+
+/*--content area--*/
+.main-content{
+    margin-left: 250px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 20px 40px;
+    transition: margin-left 400ms ease-in-out;
+}
+@media ( max-width:768px ) {
+    .main-content{
+        margin-left: 5px;
+    }
+}
+/*--END content area--*/

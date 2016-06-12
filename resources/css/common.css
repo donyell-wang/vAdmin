@@ -1,0 +1,62 @@
+/*base*/
+body, html {
+    height: 100%;
+    background-color: #E9EAEC;
+}
+html, body, a {
+    font: 14px "lucida grande", "lucida sans unicode", lucida ,Helvetica ,"Hiragino Sans GB", "Microsoft YaHei","微软雅黑",sans-serif,serif;
+}
+a , a:visited, a:hover{
+    color:#333333;
+    text-decoration: none;
+}
+a:focus , a:hover{
+    color:#3da9f7;
+}
+.ms-controller,.ms-important,[ms-controller],[ms-important]{
+    visibility: hidden;
+}
+ul,li {
+    list-style: none;
+}
+
+/*END-base*/
+
+/*override bootstrap*/
+.panel>.list-group:first-child .list-group-item:first-child, .panel>.panel-collapse>.list-group:first-child .list-group-item:first-child {
+    border-top: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*END-override bootstrap*/
+
+/*common elements*/
+.main-content .wrap{
+    /*margin: 20px 0;*/
+    padding: 20px;
+    background-color: white;
+    border: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    border-radius: 3px;
+}
+.main-content .loading-tip{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -50px;
+}
+.main-content .loading-tip.loading:before{
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background: url("../images/ajax-loader-transparent.gif") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-image:none\9;
+}
+/*END-common elements*/

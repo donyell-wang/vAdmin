@@ -1,0 +1,88 @@
+.articles-manager-area .assistText {
+    color: #999999;
+}
+
+.articles-manager-area .service {
+
+}
+
+.articles-manager-area .service .articleImg,.service .articleTitle,.service .articleWrap {
+    margin-top: 10px;
+}
+
+.articles-manager-area .service .articleImg p,.service .articleTitle p,.service .articleWrap p {
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.articles-manager-area .uploadImg img {
+    width: 200px;
+    height: 150px;
+}
+
+.articles-manager-area .uploadImg a {
+    margin-top: 5px;
+    display: block;
+}
+
+.articles-manager-area .service .btnAction {
+    margin: 15px 0;
+    text-align: center;
+}
+.articles-manager-area .service .serviceItem {
+    margin: 15px 0px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+}
+.articles-manager-area .service .serviceItem.brief {
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.articles-manager-area .service .serviceItem .title {
+    margin-bottom: 20px;
+}
+
+.articles-manager-area .service .serviceItem .title a {
+    font-size: 18px;
+    color: #111111;
+    text-decoration: none;
+}
+.articles-manager-area .service .serviceItem .title a:hover {
+    color: #3ea8f6;
+}
+
+.articles-manager-area .service .moreData {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0px;
+    color: #64829f;
+    background-color: #cdd7e3;
+}
+
+.articles-manager-area .service .moreData a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.articles-manager-area .service .noData {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    color: #ccc;
+}
+.articles-manager-area .service .manager-head{
+    margin-top: 15px;
+    background-color: #E9EAEC
+}
+.articles-manager-area .service .manager-head>li:first-child{
+    font-size:16px
+}
+.articles-manager-area .service .panel-heading .title{
+    font-size: 16px;
+}

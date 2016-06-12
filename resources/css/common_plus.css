@@ -1,0 +1,234 @@
+/*覆盖bootstrap样式*/
+@media (min-width: 768px) and (max-width: 992px){
+    .container {
+        width: 100%;
+    }
+}
+.nav-tabs{
+    background-color: #F4F4F4;
+    border: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.nav-tabs>li {
+    margin-bottom: 0px;
+}
+.nav-tabs>li>a, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+    border: none;
+    background-color: #F4F4F4;
+    color: #666666;
+    transition: color 0.3s linear;
+}
+.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+    color: #3da9f7;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+    border-radius: 0px;
+    background-color: #3da9f7;
+    color: white;
+}
+.nav-tabs>li.active:after{
+    content:'';
+    display:block;
+    background-image: url(/resources/images/nav-bottom.png);
+    background-repeat: no-repeat;
+    height:8px;
+    width: 12px;
+    margin-bottom: -8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+}
+@media ( max-width : 768px){
+    .nav-tabs>li.active:after{
+        background-image: none;
+    }
+}
+.nav-tabs>li:first-child.active>a {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-image:none;
+}
+.carousel-caption{
+    font-size: 30px;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #f4f4f4;
+}
+.tooltip-inner {
+    color: #666666;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-family: "lucida grande", "lucida sans unicode", lucida ,Helvetica ,"Hiragino Sans GB", "Microsoft YaHei","微软雅黑",sans-serif,serif; ;
+}
+.btn-default:focus, .btn-default:hover {
+    outline: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+.btn-default .glyphicon {
+    color: #9ea3a9;
+}
+.pagination>li>a{
+    color:#3da9f7;
+}
+.pagination>.active>a{
+    background-color:#3da9f7;
+    border-color: #3da9f7;
+}
+/*END-覆盖bootstrap样式*/
+
+/*通用按钮样式*/
+.cbtn_ok, .cbtn_ok:hover ,.cbtn_cancel, .cbtn_cancel:hover{
+    padding: 6px 18px;
+}
+.cbtn_ok, .cbtn_ok:hover {
+    color: whitesmoke;
+    background-color: #3198e7;
+}
+.cbtn_ok:hover {
+    border: 1px solid #0c82f9;
+}
+.cbtn_ok:focus {
+    color:whitesmoke;
+    outline: none;
+}
+.cbtn_ok:active {
+    background-image:none;
+    background-color: #3198e7;
+    color:whitesmoke
+}
+.cbtn_cancel, .cbtn_cancel:hover {
+    color: #6f6f6f;
+    border: 1px solid #dddddd;
+    background-color: #fdfdfe;
+}
+.cbtn_cancel:hover {
+    border: 1px #a7adb7 solid;
+}
+.cbtn_cancel:focus {
+    color:#6f6f6f;
+    outline: none;
+}
+.cbtn_cancel:active {
+    background-image:none;
+    background-color: #fdfdfe;
+    color:#6f6f6f
+}
+.cbtn_ok+.cbtn_cancel {
+    margin-left: 15px;
+}
+
+/*END-通用元素样式*/
+
+/*单行信息提示框样式*/
+.message-hint {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: 1051;
+    text-align: center;
+    width: 400px;
+    height: 0;
+    font-size: 0;
+    left: 50%;
+    margin-left: -200px;
+    display: none;
+}
+.message-hint .message-body {
+    display: inline-block;
+    border-radius: 0 0 3px 3px;
+    background: #F49918;
+}
+.message-hint .inner {
+    position: relative;
+    display: inline-block;
+}
+.message-hint .text {
+    display: inline-block;
+    padding: 8px 38px 10px 63px;
+    color: #ffffff;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: left;
+}
+.message-hint .icon {
+    position: absolute;
+    padding-left: 38px;
+    padding-top: 4px;
+
+    color: white;
+    font-size: 20px;
+}
+/*--END--单行信息提示框样式*/
+
+/*模态弹出框样式*/
+.modal-dialog .cdlg_no_radius {
+    /*    border-radius: 0px;*/
+}
+.modal-dialog .cdlg_content{
+
+}
+.modal-dialog .cdlg_header{
+
+}
+.modal-dialog .cdlg_body{
+
+}
+.modal-dialog  .cdlg_title {
+    line-height: 18px;
+    font-size: 18px;
+}
+.modal-dialog  .cdlg_close {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-top: 0px;
+}
+.modal-dialog .cdlg_close:focus {
+    outline: none;
+}
+.modal-dialog  .cdlg_footer {
+    border-top: none;
+    padding-top: 0px;
+}
+/*--END--模态弹出框样式*/
+
+/*信息提示框样式*/
+.modal-dialog .modal-body .cmsg_body {
+    text-align: left;
+    padding: 32px;
+}
+.modal-dialog .modal-body .cmsg_body .inner_msg {
+    position: relative;
+    padding-left: 46px;
+    padding-top: 6px;
+}
+.modal-dialog .modal-body .cmsg_body .inner_msg .icon{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 0px;
+    top: 0px;
+    color:#57ACFF;
+    font-size:34px;
+}
+.modal-dialog .modal-body .cmsg_body .inner_msg .title{
+    max-width: 300px;
+    color: #020202;
+    font-size: 16px;
+    font-weight: normal;
+    float: none;
+    padding: 0;
+    margin: 0px;
+    line-height: 24px;
+}
+/*--END--信息提示框样式*/

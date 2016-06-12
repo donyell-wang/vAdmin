@@ -1,0 +1,65 @@
+[
+    {
+        "name":"Basic Demo 1",
+        "path":"",
+        "menus":[
+            {
+                "name":"General 1",
+                "path":"widgets/demos/demo_1/general_1.html"
+            },
+            {
+                "name":"General 2",
+                "path":"widgets/demos/demo_1/general_2.html"
+            },
+            {
+                "name":"General 3",
+                "path":"widgets/demos/demo_1/general_3.html"
+            }
+        ]
+    },
+    {
+        "name":"Basic Demo 2",
+        "path":"",
+        "menus":[
+            {
+                "name":"Advance 1",
+                "aliasID":"demo_advance_1",
+                "path":"widgets/demos/demo_2/advance.html"
+            },
+            {
+                "name":"Advance 2",
+                "aliasID":"demo_advance_2",
+                "path":"widgets/demos/demo_2/advance.html"
+            },
+            {
+                "name":"Advance 3",
+                "aliasID":"demo_advance_3",
+                "path":"widgets/demos/demo_2/advance.html"
+            }
+        ]
+    },
+    {
+        "name":"Articles",
+        "path":"",
+        "menus":[
+            {
+                "name":"General",
+                "aliasID":"articles_general",
+                "path":"widgets/demos/articles/general_and_publish/general_and_publish.html"
+            },
+            {
+                "name":"Publish",
+                "aliasID":"articles_publish",
+                "path":"widgets/demos/articles/general_and_publish/general_and_publish.html"
+            },
+            {
+                "name":"Report",
+                "path":"widgets/demos/articles/report.html"
+            }
+        ]
+    },
+    {
+        "name":"Messages",
+        "path":"widgets/demos/messages/messages.html"
+    }
+]
